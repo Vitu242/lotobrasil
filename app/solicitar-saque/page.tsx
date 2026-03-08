@@ -1,0 +1,17 @@
+import Link from "next/link";
+
+export default function SolicitarSaquePage() {
+  return (
+    <div className="p-4">
+      <header className="flex items-center gap-2 mb-6 text-[#D4AF37]">
+        <Link href="/" className="p-1">
+          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+        </Link>
+        <h1 className="text-xl font-bold">Solicitar saque</h1>
+      </header>
+      <div className="rounded-xl bg-[#141D32] p-6 border border-[#258D46]/30">
+        <p className="text-[#94a3b8]">Solicite o saque (Em desenvolvimento)</p>
+      </div>
+    </div>
+  );
+}
