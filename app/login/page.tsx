@@ -15,22 +15,22 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#1A2A44] p-4">
-      <div className="w-full max-w-sm rounded-2xl bg-[#141D32] p-8 shadow-xl border border-[#258D46]/30">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-mesh p-4">
+      <div className="w-full max-w-sm rounded-2xl glass-card p-8">
         <div className="flex flex-col items-center gap-6">
           <Image src="/logo.svg" alt="LOTOBRASIL" width={80} height={80} />
-          <h1 className="text-2xl font-bold text-[#D4AF37]">LOTOBRASIL</h1>
-          <p className="text-[#94a3b8] text-sm text-center">Acesse sua conta para realizar apostas</p>
+          <h1 className="text-2xl font-bold text-amber-400">LOTOBRASIL</h1>
+          <p className="text-slate-400 text-sm text-center">Acesse sua conta para realizar apostas</p>
           <form onSubmit={handleSubmit} className="w-full space-y-4">
             <div>
-              <label className="block text-sm text-[#94a3b8] mb-1">Telefone</label>
-              <input type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} placeholder="(00) 0 0000 0000" className="w-full rounded-lg border border-[#258D46]/50 bg-white px-4 py-3 text-[#171717]" required />
+              <label className="block text-sm text-slate-400 mb-1">Telefone</label>
+              <input type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} placeholder="(00) 0 0000 0000" className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500 focus:border-emerald-500/50 focus:outline-none focus:ring-1 focus:ring-emerald-500/30 [color-scheme:dark]" required />
             </div>
             <div>
-              <label className="block text-sm text-[#94a3b8] mb-1">Senha</label>
-              <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="••••••••" className="w-full rounded-lg border border-[#258D46]/50 bg-white px-4 py-3 text-[#171717]" required />
+              <label className="block text-sm text-slate-400 mb-1">Senha</label>
+              <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="••••••••" className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500 focus:border-emerald-500/50 focus:outline-none focus:ring-1 focus:ring-emerald-500/30 [color-scheme:dark]" required />
             </div>
-            <button type="submit" className="w-full rounded-lg bg-[#258D46] py-3 font-semibold text-white hover:bg-[#1e7038] transition-colors">Entrar</button>
+            <button type="submit" className="w-full rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 py-3 font-semibold text-white hover:from-emerald-600 hover:to-emerald-700 transition-all shadow-lg shadow-emerald-500/20">Entrar</button>
           </form>
         </div>
       </div>

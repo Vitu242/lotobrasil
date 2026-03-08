@@ -1,16 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  --bg-dark: #141D32;
-  --bg-darker: #1A2A44;
-  --green: #258D46;
-  --gold: #D4AF37;
+  --bg-dark: #0f172a;
+  --bg-darker: #020617;
+  --bg-card: rgba(15, 23, 42, 0.6);
+  --green: #22c55e;
+  --green-dim: #16a34a;
+  --gold: #eab308;
+  --gold-dim: #ca8a04;
+  --accent: #3b82f6;
 }
 
 body {
   background: var(--bg-darker);
   color: #ffffff;
-  font-family: system-ui, sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-input, textarea, select { color: #171717; }
+/* Background gradient mesh - modern finance/betting aesthetic */
+.bg-mesh {
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(34, 197, 94, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(234, 179, 8, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 0% 50%, rgba(59, 130, 246, 0.06), transparent),
+    linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea, select { color: inherit; }

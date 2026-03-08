@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { Header } from "./Header";
+import { BANCA } from "@/lib/config";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -12,8 +13,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#1A2A44]">
-      <Header unidade="712553" />
+    <div className="min-h-screen bg-slate-950">
+      <Header nomeBanca={BANCA.nome} />
       <main className="pb-24">{children}</main>
     </div>
   );
