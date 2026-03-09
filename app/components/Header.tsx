@@ -12,7 +12,7 @@ export function Header({ nomeBanca = "LOTOBRASIL" }: { nomeBanca?: string }) {
     <>
       <header className="sticky top-0 z-40 flex h-14 items-center justify-between px-4 bg-slate-900/80 backdrop-blur-xl border-b border-white/5">
         <Link href="/" className="flex items-center gap-2.5">
-          <Image src="/logo.svg" alt={nomeBanca} width={28} height={28} className="rounded-lg" />
+          <Image src="/logo.png" alt={nomeBanca} width={28} height={28} className="rounded-lg" />
           <span className="font-semibold text-sm text-white tracking-tight">{nomeBanca}</span>
         </Link>
         <button

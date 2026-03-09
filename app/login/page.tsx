@@ -18,7 +18,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-mesh p-4">
       <div className="w-full max-w-sm rounded-2xl glass-card p-8">
         <div className="flex flex-col items-center gap-6">
-          <Image src="/logo.svg" alt="LOTOBRASIL" width={80} height={80} />
+          <Image src="/logo.png" alt="LOTOBRASIL" width={80} height={80} />
           <h1 className="text-2xl font-bold text-amber-400">LOTOBRASIL</h1>
           <p className="text-slate-400 text-sm text-center">Acesse sua conta para realizar apostas</p>
           <form onSubmit={handleSubmit} className="w-full space-y-4">

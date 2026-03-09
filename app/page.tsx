@@ -8,7 +8,7 @@ export default function HomePage() {
       <div className="p-5 max-w-md mx-auto space-y-6">
         {/* Logo central - identidade forte */}
         <div className="flex justify-center pt-2 pb-4">
-          <Image src="/logo.svg" alt="LOTOBRASIL" width={80} height={80} priority className="drop-shadow-lg" />
+          <Image src="/logo.png" alt="LOTOBRASIL" width={80} height={80} priority className="drop-shadow-lg" />
         </div>
 
         {/* Card de saldo - glassmorphism */}
